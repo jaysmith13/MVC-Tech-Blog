@@ -6,5 +6,6 @@ Model View Controller
 ## Technologies used
 
 ## Deployed Link
+https://jaysmith13.github.io/MVC-Tech-Blog/
 
 ## Screenshot
