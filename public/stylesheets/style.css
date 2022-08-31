@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
   }
-  body
+  body, html
  {
     margin: 0;
     padding: 0;
@@ -9,9 +9,146 @@
     font-family: 'Courier New', Courier, monospace;
 
  }
-
-
-
+ body{
+   
+    color:#ccc
+  }
+  
+  a {
+    text-decoration: none;
+    color:#666666;
+    font-weight: bold;
+    
+  }
+  
+  a:hover {
+    color: ghostwhite;
+  }
+  button:hover {
+    background-color: whitesmoke;
+  }
+  
+  .post-list {
+    margin: 0;
+    padding: 0;
+  }
+  button {
+    background-color: #231010;
+    border: 0;
+    padding: 1%;
+    color: white;
+    font-weight:lighter;
+    transition: background-color .1s;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+  }
+  textarea, input {
+    padding: .5%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  textarea:focus, input:focus {
+    outline: none;
+    border: 1px solid aqua;
+  }
+  
+  textarea {
+    min-width: 40%;
+    min-height: 100px;
+  }
+  
+  form > div {
+    margin-bottom: 2%;
+  }
+  
+  form label {
+    display: block;
+  }
+  
+  .wrapper {
+    width: 100%;
+    min-height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1%;
+    background-color: #231010;
+    color: #d9ead3;
+  }
+  
+  header h1 {
+    font-size: 2.8em;
+    color: #3a1717;
+    background-color: aqua;
+    padding:  10px 25px;
+    border-radius: 5px;
+    box-shadow:  5px 5px whitesmoke;
+  }
+  
+  main {
+    flex: 1;
+    padding: 2% 4%;
+  }
+  
+  .btn-no-style {
+    background: none;
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #1e4691;
+    font-size: 100%;
+    font-weight: lighter;
+    transition: color .1s;
+    width: auto;
+    
+  }
+  
+  .btn-no-style:hover {
+    color: #a7a7a7;
+  }
+  
+  .delete-post-btn {
+    background-color: #b61414;
+  }
+  
+  .delete-post-btn:hover {
+    background-color: #b61414;
+  }
+    
+  .post {
+    margin-bottom: 2%;
+    line-height: 150%;
+    border: 5px solid black;
+  }
+  .post .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: #1e4691;
+    font-size: 1.2em;
+    padding: 10px 5px;
+  }
+  
+  .post .title span {
+    font-style: italic;
+    font-size: 70%;
+    color: #7d7d7d;
+  }
+  
+  .new-post-form input {
+    width: 300px;
+  }
  footer {
     border-top: 1px solid #ccc;
     display: flex;
