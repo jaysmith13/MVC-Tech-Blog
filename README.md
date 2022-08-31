@@ -6,5 +6,6 @@ This application is a CMS-style blog site. Users can not only publish their blog
 
 ## Deployed Links
 https://jaysmith13.github.io/MVC-Tech-Blog/
+https://mvc-tech-blog13.herokuapp.com/
 
 ## Screenshot
