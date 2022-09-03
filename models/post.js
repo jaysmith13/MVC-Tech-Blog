@@ -16,7 +16,7 @@ Post.init(
         type: DataTypes.STRING,
         allowNull: false
       },
-      media: {
+      media_post: {
         type: DataTypes.STRING,
         allowNull: false
       },

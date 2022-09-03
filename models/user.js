@@ -11,7 +11,14 @@ class User extends Model {
 // Model functions
 User.init(
   {
-
+    email: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        unique: true,
+        validate: {
+            isEmail: true
+        }
+    },
     id: {
         
         type: DataTypes.INTEGER,
@@ -34,13 +41,13 @@ User.init(
   },
   {
     hooks: {
-        // set up beforeCreate lifecycle "hook" functionality
+        // set up beforeCreate lifecycle "hook" function
         async beforeCreate(newUserData) {
             newUserData.password = await bcrypt.hash(newUserData.password, 10);
             return newUserData;
             
         },
-        // set up beforeUpdate lifecycle "hook" functionality
+        // set up beforeUpdate lifecycle "hook" function
         async beforeUpdate(updatedUserData) {
             updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
             return updatedUserData;
